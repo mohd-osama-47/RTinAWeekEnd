@@ -96,7 +96,7 @@ inline vec3 operator*(const vec3 &v, double t) {
 }
 
 // vector & scalar division
-inline vec3 operator/(vec3& u, double t) {
+inline vec3 operator/(vec3 u, double t) {
     return (1/t) * u;
 }
 
@@ -113,7 +113,7 @@ inline vec3 cross(const vec3& u, const vec3& v) {
 }
 
 // unit vector
-inline vec3 unit_vector(vec3& u) {
+inline vec3 unit_vector(vec3 u) {
     return u / u.length();
 }
 
